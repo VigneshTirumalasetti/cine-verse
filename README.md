@@ -14,4 +14,4 @@ CineVerse is designed with a clean UI, smooth layout, and organized media struct
 
 
 ```md
-![CineVerse Preview](images/preview.png)
+
