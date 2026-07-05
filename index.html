@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineVerse</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url("https://i.pinimg.com/vwebp/1200x/b1/3a/03/b13a032f1a7ed8af529cc28736e305ab.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.65);
+        z-index: -1;
+      }
+
+      .hero {
+        text-align: center;
+        padding-top: 100px;
+      }
+
+      h1 {
+        font-family: "Dancing Script", cursive;
+        font-size: 130px;
+
+        text-shadow:
+          0 0 10px #fff,
+          0 0 20px #ff69b4,
+          0 0 40px #ff69b4;
+      }
+
+      .tagline {
+        font-size: 24px;
+        letter-spacing: 4px;
+        margin-top: 10px;
+      }
+
+      .sub-heading {
+        margin-top: 90px;
+        font-size: 42px;
+
+        text-shadow:
+          0 0 10px #fff,
+          0 0 20px #ffd700;
+      }
+
+      .sub-text {
+        width: 700px;
+        margin: 20px auto;
+        line-height: 1.8;
+        font-size: 18px;
+      }
+
+      .songs {
+        width: 900px;
+        margin: 50px auto 100px;
+      }
+
+      .song {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(15px);
+
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 25px;
+
+        padding: 25px;
+        margin-bottom: 30px;
+
+        box-shadow:
+          0 0 15px rgba(255, 105, 180, 0.25),
+          0 0 30px rgba(255, 105, 180, 0.1);
+
+        transition: 0.3s;
+      }
+
+      .song:hover {
+        transform: translateY(-5px);
+      }
+
+      .cover {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 20px;
+
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+
+        margin-bottom: 15px;
+      }
+
+      .song h3 {
+        font-size: 26px;
+        margin-bottom: 8px;
+      }
+
+      .movie {
+        opacity: 0.8;
+        margin-bottom: 15px;
+      }
+
+      audio {
+        width: 100%;
+        height: 50px;
+        border-radius: 30px;
+        opacity: 0.9;
+      }
+
+      .quote {
+        text-align: center;
+        margin-top: 70px;
+        font-size: 32px;
+        font-family: "Dancing Script", cursive;
+        color: #ffd9ec;
+      }
+      /* LOVE MOVIES SECTION */
+
+      .movie-section {
+        width: 900px;
+        margin: 100px auto;
+      }
+
+      .movie-card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(15px);
+
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 25px;
+
+        padding: 25px;
+        margin-bottom: 35px;
+
+        box-shadow:
+          0 0 15px rgba(255, 105, 180, 0.25),
+          0 0 30px rgba(255, 105, 180, 0.1);
+
+        transition: 0.3s;
+      }
+
+      .movie-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .movie-cover {
+        width: 180px;
+        height: 260px;
+        object-fit: cover;
+
+        border-radius: 20px;
+
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+
+        margin-bottom: 15px;
+      }
+
+      .movie-card h3 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .movie-description {
+        margin-bottom: 20px;
+        opacity: 0.9;
+        line-height: 1.8;
+      }
+
+      video {
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+      }
+      iframe {
+        width: 100%;
+        height: 450px;
+        border: none;
+        border-radius: 20px;
+
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero">
+      <h1>CineVerse</h1>
+
+      <p class="tagline">Watch • Feel • Remember</p>
+
+      <h2 class="sub-heading">Top Telugu Love Melodies</h2>
+
+      <p class="sub-text">
+        Discover beautiful Telugu melodies that bring emotions, memories and
+        timeless love stories to life through music.
+      </p>
+    </div>
+
+    <div class="songs">
+      <!-- SONG 1 -->
+      <div class="song">
+        <img src="hinanna.jpg" class="cover" alt="Hi Nanna Poster" />
+
+        <h3>🎵 Samayama</h3>
+
+        <p class="movie">Movie : Hi Nanna</p>
+
+        <audio controls>
+          <source src="Samayama.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <!-- SONG 2 -->
+      <div class="song">
+        <img src="sitaramam2.jpg" class="cover" alt="Sita Ramam Poster" />
+
+        <h3>🎵 Inthandham</h3>
+
+        <p class="movie">Movie : Sita Ramam</p>
+
+        <audio controls>
+          <source src="Inthandham.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <!-- SONG 3 -->
+      <div class="song">
+        <img src="lovestory.jpg" class="cover" alt="Love Story Poster" />
+
+        <h3>🎵 Nee Chitram Choosi</h3>
+
+        <p class="movie">Movie : Love Story</p>
+
+        <audio controls>
+          <source
+            src="Nee Chitram Choosi - SenSongsM3.Com.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+      </div>
+
+      <div class="quote">
+        "Some stories are remembered through words, the most beautiful ones
+        through music."
+      </div>
+    </div>
+    <div class="movie-section">
+      <h2 class="sub-heading" style="text-align: center">
+        💖 Feel Good Telugu Love Stories
+      </h2>
+
+      <p class="sub-text">
+        Relive some of the most beautiful Telugu love stories that continue to
+        touch hearts through unforgettable emotions, music and memories.
+      </p>
+
+      <!-- Ye Maaya Chesave -->
+
+      <div class="movie-card">
+        <img src="yemayachesavey.jpg" class="movie-cover" />
+
+        <h3>❤️ Ye Maaya Chesave</h3>
+
+        <p class="movie-description">
+          A timeless romance that beautifully captures first love, dreams and
+          emotions.
+        </p>
+
+        <iframe
+          src="https://www.youtube.com/embed/71jqdKpSYLM?si=vri_ZTaCprCkOOGd"
+          title="Ye Maaya Chesave"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <!-- Hi Nanna -->
+
+      <div class="movie-card">
+        <img src="hinanna1.jpg" class="movie-cover" />
+
+        <h3>❤️ Hi Nanna</h3>
+
+        <p class="movie-description">
+          A heartwarming story of love, family, forgiveness and second chances.
+        </p>
+
+        <iframe
+          src="https://www.youtube.com/embed/gmSWCO3-TiU?si=-3mC1lUAAnMW7QQG"
+          title="Hi Nanna"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <!-- Sita Ramam -->
+
+      <div class="movie-card">
+        <img src="sitaramam1.jpg" class="movie-cover" />
+
+        <h3>❤️ Sita Ramam</h3>
+
+        <p class="movie-description">
+          A magical love story connected through letters, destiny and sacrifice.
+        </p>
+
+        <iframe
+          src="https://www.youtube.com/embed/horY-iGBHB4?si=lZ3EhHs8mfzdYRrN"
+          title="Sita Ramam"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <!-- Bommarillu -->
+
+      <div class="movie-card">
+        <img src="bommarillu.jpg" class="movie-cover" />
+
+        <h3>❤️ Bommarillu</h3>
+
+        <p class="movie-description">
+          A feel-good classic about love, freedom and family bonds.
+        </p>
+
+        <iframe
+          src="https://www.youtube.com/embed/5q_eL9e9LpY?si=jLNFYA6I1LvONMYQ"
+          title="Bommarillu"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <!-- Ishq -->
+
+      <div class="movie-card">
+        <img src="ishq.jpg" class="movie-cover" />
+
+        <h3>❤️ Ishq</h3>
+
+        <p class="movie-description">
+          A charming romantic entertainer packed with beautiful moments and
+          lovable characters.
+        </p>
+
+        <iframe
+          src="https://www.youtube.com/embed/CF1Mos08l2w?si=nDNEdC4TjveXvdYz"
+          title="Ishq"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </div>
+  </body>
+</html>
